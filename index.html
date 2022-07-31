@@ -58,7 +58,7 @@
 
     </div>
 
-    <audio preload="auto" autoplay="" id="media" src="love.mp3" autoplay preload loop="loop"></audio>
+    <audio id="media" src="love.mp3"  loop="loop"></audio>
 
     <script>
         (function () {
@@ -117,6 +117,7 @@
             var hold = 1;
 
             canvas.click(function (e) {
+                $('#media').play();
                 var offset = canvas.offset(), x, y;
                 x = e.pageX - offset.left;
                 y = e.pageY - offset.top;
